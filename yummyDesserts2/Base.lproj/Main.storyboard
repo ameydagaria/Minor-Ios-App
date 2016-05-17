@@ -9,15 +9,15 @@
             <objects>
                 <tableViewController id="JPX-Kp-D86" customClass="TableViewController" customModule="GRE_PANDA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="22" sectionFooterHeight="22" id="Zku-pX-4kX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="160" id="OwH-Nz-gHM" customClass="myCell" customModule="GRE_PANDA" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="86" width="414" height="160"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OwH-Nz-gHM" id="vP5-c4-PAi">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFI-H0-KlY">
@@ -43,7 +43,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="GRE PANDA" id="ltF-yq-rAc"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="qTQ-Kx-fAp" id="pNQ-Ms-KLh"/>
                     </connections>
@@ -69,33 +69,36 @@
                         <viewControllerLayoutGuide type="bottom" id="jX9-qP-JMm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aV6-Yj-gEz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4BZ-02-oNf">
-                                <rect key="frame" x="10" y="79" width="389" height="379"/>
+                                <rect key="frame" x="19" y="87" width="282" height="319"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPd-zb-nQB">
-                                <rect key="frame" x="83" y="485" width="248" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cID-mv-q40">
-                                <rect key="frame" x="47" y="480" width="320" height="150"/>
+                                <rect key="frame" x="0.0" y="414" width="320" height="110"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPd-zb-nQB">
+                                <rect key="frame" x="36" y="414" width="248" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qjl-JB-qQs">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="35" width="414" height="44"/>
                                 <items>
                                     <navigationItem id="p0D-oq-gCk">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Nrf-BW-d4L">
-                                            <connections>
-                                                <segue destination="vQT-Vp-wsT" kind="show" identifier="showDetail" id="qKH-wd-DqD"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" id="Nrf-BW-d4L"/>
+                                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BACK" minimumFontSize="17" id="BDS-HS-moA">
+                                            <rect key="frame" x="178" y="7" width="58" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -106,7 +109,7 @@
                     <navigationItem key="navigationItem" id="hqQ-qo-Roi"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="detailImage" destination="4BZ-02-oNf" id="Pma-aB-B6g"/>
                         <outlet property="detailLabel" destination="kPd-zb-nQB" id="kZU-Nu-RK9"/>
@@ -156,7 +159,4 @@
             <point key="canvasLocation" x="2402" y="48"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="qKH-wd-DqD"/>
-    </inferredMetricsTieBreakers>
 </document>

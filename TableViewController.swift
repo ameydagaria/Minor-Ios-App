@@ -19,6 +19,7 @@ class TableViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Touchid() 
         
         searchcontroller.searchBar.scopeButtonTitles = ["All", "Easy", "Moderate", "Hard"]
         searchcontroller.searchBar.delegate = self
@@ -97,6 +98,7 @@ class TableViewController: UITableViewController{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        Touchid()
     }
     
     // MARK: - Table view data source
@@ -181,7 +183,32 @@ extension TableViewController: UISearchResultsUpdating
         
         
     }
-    
+    func Touchid(){
+        let authcontext :LAContext = LAContext()
+        var error :NSError?
+        
+        if authcontext.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, error: &error)//it is testing wether we have touch id or not on device
+        {
+            authcontext.evaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, localizedReason: "Welcome to Gre Panda ", reply: { (wassuccesful : Bool, error : NSError? )in // to check was succeful and if then what we want to do
+                if wassuccesful {
+                    //
+                    NSLog("Welcome to Gre Panda")
+                }
+                else {
+                    
+                    NSLog("Try Again")
+                }
+            })
+            
+        }
+        else {
+            
+        }
+        
+        
+        
+        
+    }
     
     
     
