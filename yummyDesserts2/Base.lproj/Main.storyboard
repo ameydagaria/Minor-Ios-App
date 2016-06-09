@@ -123,7 +123,7 @@
         <!--Navigation Controller-->
         <scene sceneID="h5j-Q4-xbY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5pd-gE-fRa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenKeyboardAppears="YES" id="5pd-gE-fRa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4ng-sI-tuf">
@@ -142,7 +142,7 @@
         <!--Navigation Controller-->
         <scene sceneID="3xQ-XK-zWE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vQT-Vp-wsT" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenKeyboardAppears="YES" id="vQT-Vp-wsT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="R8M-au-JAa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bNW-sc-w0g">
